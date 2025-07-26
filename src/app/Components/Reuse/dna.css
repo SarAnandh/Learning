@@ -1,0 +1,41 @@
+/* ./Reuse/DnaBackground.css */
+.dna-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* stay in background */
+  opacity: 0.2;
+  pointer-events: none; /* make it non-interactive */
+}
+
+.helix-path {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 0;
+  animation: dnaMove 10s linear infinite;
+}
+
+.dna-bg:hover .helix-path {
+  animation: dnaMoveHover 4s ease-in-out infinite;
+  stroke: #00ffff;
+  opacity: 0.5;
+}
+
+@keyframes dnaMove {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -300;
+  }
+}
+
+@keyframes dnaMoveHover {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -150;
+  }
+}

@@ -4,6 +4,42 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+.container{
+background-color: #ffffff;
+padding: 10px;
+width: 100%;
+height: 100%;
+}
+.horizontal-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.scroll-content {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: repeat(2, 120px);
+  gap: 10px;
+  width:100%;
+}
+
+.grid-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
 
 @theme inline {
   --color-background: var(--background);
