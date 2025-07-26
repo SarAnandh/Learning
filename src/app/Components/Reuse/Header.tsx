@@ -44,7 +44,7 @@ const Header = () => {
         <nav className="hidden md:flex space-x-6 text-lg">
           <Link to="/home" className="hover:text-blue-400 transition">Home</Link>
           <Link to="/about" className="hover:text-blue-400 transition">About</Link>
-          <Link to="/projects" className="hover:text-blue-400 transition">Projects</Link>
+          <Link to="/subramanian" className="hover:text-blue-400 transition">Projects</Link>
           <Link to="/contact" className="hover:text-blue-400 transition">Contact</Link>
         </nav>
       </div>
@@ -58,7 +58,7 @@ const Header = () => {
           <Link to="/about" onClick={() => setMenuOpen(false)} className="block hover:text-blue-400">
             About
           </Link>
-          <Link to="/projects" onClick={() => setMenuOpen(false)} className="block hover:text-blue-400">
+          <Link to="/subramanian" onClick={() => setMenuOpen(false)} className="block hover:text-blue-400">
             Projects
           </Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)} className="block hover:text-blue-400">
