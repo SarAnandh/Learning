@@ -42,7 +42,7 @@ export default function Portfolio() {
     }
   ];
 
-  const NavButton = ({ section, label, isActive, onClick }) => (
+  const NavButton = ({ section, label, isActive, onClick }:any) => (
     <button
       onClick={onClick}
       className={`relative px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${
@@ -58,7 +58,7 @@ export default function Portfolio() {
     </button>
   );
 
-  const SkillCategory = ({ title, skills, icon: Icon, gradient }) => (
+  const SkillCategory = ({ title, skills, icon: Icon, gradient }:any) => (
     <div className="group relative bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
       <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-300`}></div>
       <div className="relative">
@@ -69,7 +69,7 @@ export default function Portfolio() {
           <h3 className="text-xl font-bold text-white ml-3">{title}</h3>
         </div>
         <div className="flex flex-wrap gap-2">
-          {skills.map((skill, index) => (
+          {skills.map((skill:any, index:any) => (
             <span
               key={index}
               className="px-4 py-2 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-medium border border-white/30 hover:bg-white/30 transition-all duration-200"
@@ -82,7 +82,7 @@ export default function Portfolio() {
     </div>
   );
 
-  const ProjectCard = ({ project, index }) => (
+  const ProjectCard = ({ project, index }:any) => (
     <div className="group relative bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden">
       <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-20 transition-opacity duration-500`}></div>
       <div className="absolute top-4 right-4">
@@ -103,7 +103,7 @@ export default function Portfolio() {
             Key Features:
           </h4>
           <ul className="space-y-2">
-            {project.features.map((feature, idx) => (
+            {project.features.map((feature:any, idx:any) => (
               <li key={idx} className="text-gray-300 text-sm flex items-start">
                 <div className="w-2 h-2 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                 {feature}
