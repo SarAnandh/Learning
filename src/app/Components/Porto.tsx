@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Mail, Phone, Github, Globe, MapPin, ExternalLink, Code, Smartphone, Cloud, Database, Star, Zap, Sparkles, ChevronDown, GitBranchPlus, Braces, GithubIcon } from 'lucide-react';
 import Img1 from '../img/img2.png'
+// import Resume from ''
 import Image from 'next/image';
 import { Linkedin } from 'lucide-react';
-
+import ResumePdf from '../img/resume.pdf';
 export default function Portfolio() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [activeSection, setActiveSection] = useState('home');
@@ -250,6 +251,16 @@ export default function Portfolio() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-6 md:pt-8 justify-center lg:justify-start">
+                  
+                  <a
+                  href='/resume.pdf'
+                  download="Subramanian_Resume.pdf"
+                    // onClick={() => scrollToSection('projects')}
+                    className="group relative px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full text-white font-semibold tracking-wide overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 text-sm md:text-base"
+                  >
+                    <span className="relative z-10">Download Resume</span>
+                    <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                  </a>
                   <button
                     onClick={() => scrollToSection('projects')}
                     className="group relative px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full text-white font-semibold tracking-wide overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 text-sm md:text-base"
@@ -464,7 +475,7 @@ export default function Portfolio() {
                       info: 'Subrxmanian@gmail.com',
                       gradient: 'from-blue-500 to-purple-600',
                       fun: () => {
-                        window.location.href = "mailto:Subrxmanian@gmail.com?subject=Hello&body=Message";
+                        window.location.href = "mailto:subrxmanian@gmail.com?subject=Hello&body=Message";
                       },
                     },
                     {
