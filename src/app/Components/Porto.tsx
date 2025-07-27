@@ -4,7 +4,6 @@ import Img1 from '../img/img2.png'
 // import Resume from ''
 import Image from 'next/image';
 import { Linkedin } from 'lucide-react';
-import ResumePdf from '../img/resume.pdf';
 export default function Portfolio() {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [activeSection, setActiveSection] = useState('home');
@@ -225,7 +224,7 @@ export default function Portfolio() {
       {/* Main Content */}
       <main className="relative">
         {/* Home Section */}
-        <section id="home" className="min-h-screen flex items-center justify-center pt-20 md:pt-24 px-4 md:px-6">
+        <section id="home" className="min-h-screen flex items-center justify-center pt-60 md:pt-24 px-4 md:px-6">
           <div className="max-w-7xl mx-auto w-full">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
               {/* Left Content - Text Section */}
