@@ -69,9 +69,23 @@ export default function Portfolio() {
         'Secure document upload and cloud storage',
         'Dynamic fare calculation using geolocation APIs'
       ],
-      tech: 'React Native, AWS S3, Laravel API, Firebase, Expo Notifications',
+      tech: 'React Native, AWS S3, REST API, Firebase Authentication, Push Notifications',
       gradient: 'from-purple-500 to-pink-500',
       link: 'https://github.com/Subrxmanian/DriverApp_ReactNative'
+    },
+    {
+      title: 'Tic Tac Toe',
+      description: 'A mobile platform to play infinity time with multiplayer and single player. ',
+      features: [
+        'Easy and Hard mode options',
+        'Gives an Best experiences in smoothness and easy too play. ',
+        'We can switch theme too light and hard theme.',
+        'Game statistics some draws and wins of an each player and uses local storage to store data',
+        'Dynamic fare calculation using  Async Storage'
+      ],
+      tech: 'React Native, Tailwind css',
+      gradient: 'from-purple-500 to-pink-500',
+      link: 'https://github.com/Subrxmanian/XO'
     },
     {
       title: 'Shopping App',
@@ -83,7 +97,7 @@ export default function Portfolio() {
         'Amazon-style browsing and search features'
       ],
       tech: 'React Native, Firebase, REST APIs, AWS (planned), Video SDK (planned)',
-      gradient: 'from-cyan-500 to-blue-500',
+      gradient: 'from-purple-500 to-pink-500',
       link: 'https://github.com/Subrxmanian/FLYKUP'
     }
   ];
