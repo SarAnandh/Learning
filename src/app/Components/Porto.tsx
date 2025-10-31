@@ -266,7 +266,7 @@ export default function Portfolio() {
                 <div className="flex flex-col sm:flex-row gap-4 pt-6 md:pt-8 justify-center lg:justify-start">
                   
                   <a
-                  href='/resume.pdf'
+                  href='/SUBRAMANIAN.pdf'
                   download="Subramanian_Resume.pdf"
                     // onClick={() => scrollToSection('projects')}
                     className="group relative px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full text-white font-semibold tracking-wide overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/50 text-sm md:text-base"
